@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 웹 02</title>
+    <link rel="stylesheet" href="./reset.css">
+
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .main {
+            position: relative;
+            height: 100vh;
+            background: url(./img/m00.jpg) no-repeat center center/cover;
+        }
+
+        .main .sub {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            padding: 0 15px;
+        }
+
+        .main .sub h2 {
+            font-size: 50px;
+            margin: 0 0 10px 0;
+            color: rgb(147, 20, 206);
+            text-align: center;
+        }
+
+        .main .sub p {
+            font-size: 15px;
+            color: rgb(129, 12, 129);
+            text-align: center;
+        }
+
+        .btn {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .btn {
+                position: fixed;
+                top: 30px;
+                right: 30px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="sub">
+            <h2>responsive web review</h2>
+            <p>-반응형 웹 복습-</p>
+        </div>
+    </section>
+
+    <button class="btn">
+        <i class="xi-apps"></i>
+    </button>
+</body>
+
+</html>
